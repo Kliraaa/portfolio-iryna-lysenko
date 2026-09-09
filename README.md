@@ -19,10 +19,12 @@ P.s. : Une idée que je pensais c’est de faire une interface comme un mini jeu
 -	Put a half-transparent black overlay and put less overlay and zoom on a hover
 -	Utiliser l’image de couteau swiss pour représenter la polyvalence
 -	Les logiciels dans inventaire en style de Resident Evil 4
-Sites inspirants:
-•	Diabolic 
-•	Longshot Features – Arthouse Cult x Production Company
-•	Vovi Studio | Your Unfair Advantage <br>
+
+**Sites inspirants:**
+- [Diabolik](https://www.diabolik.net/)
+- [Longshot Features](https://longshotfeatures.com/)
+- [Vovi Studio](https://www.vovi.studio/)
+- [BleachFX(Brazilian)](https://bleachfx.com/home)<br>
 
 **Projets potentiels à mettre :**
 - Beauté fatale / OnyxIA
