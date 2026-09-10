@@ -1,7 +1,7 @@
 # portfolio-iryna-lysenko
 
 ![Moodboard principal](assets/photo/moodboard_principal.png)
-***Esthétique**
+***Esthétique***
 ![Moodboard esthetique](assets/photo/Moodboard-vibe.png)
 ***1.Quel type de poste ou de stage je vise en sortant du programme?***<br>
 Caméraman, concept artist, game dev, design graphique, animatrice 2D/3D<br>
