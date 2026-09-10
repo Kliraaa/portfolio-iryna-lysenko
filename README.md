@@ -1,4 +1,4 @@
-# portfolio-iryna-lysenko
+# Portfolio Iryna Lysenko
 
 ![Moodboard principal](assets/photo/moodboard_principal.png)
 ***Esthétique***
