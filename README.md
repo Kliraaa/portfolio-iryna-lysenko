@@ -1,11 +1,14 @@
 # portfolio-iryna-lysenko
 
+![Moodboard principal](assets/photo/moodboard_principal.png)
+***Esthétique**
+![Moodboard esthetique](assets/photo/Moodboard-vibe.png)
 ***1.Quel type de poste ou de stage je vise en sortant du programme?***<br>
-Caméraman, concept artist, game dev, design graphic, animatrice 2D/3D<br>
+Caméraman, concept artist, game dev, design graphique, animatrice 2D/3D<br>
 ***2.Qui va probablement regarder mon portfolio? (un•e recruteur•e d'agence, une petite entreprise, un•e client•e potentiel•le...)***<br>
 Un•e recruteur•e d'agence des grandes companies, les clients potentiels, mes parents<br>
 ***3.Qu'est-ce que cette personne cherche à voir en premier?***<br>
-Qui je suis (nom, prénom) et ce que je fais. something punchy, direct, and enthusiastic<br>
+Qui je suis (nom, prénom) et ce que je fais. Quelque chose punchy, directe, and enthusiaste<br>
 ***4.Quel style visuel (couleurs, typographie, ambiance générale) représenterait le mieux l'identité professionnelle que je veux projeter?***<br>
 Couleurs : monochrome noir et blanc avec un couleur accent; Typo : Gras, sérif- sérieux, gothique, professionnel, style; Ambiance : Directe (straight to the point), artistique, gothique, nerd et original. Styles d’inspiration : Gothique, Cyberpunk, Art Nouveau (Alphonse Mucha), style de Devil May Cry. Contraste d’esthétique sombre et sérieuse avec quelque chose de soft et en peu féminin et cute. Bento-box layout.<br>
 ***5.Quelle impression je veux que cette personne retienne après avoir visité mon site?***<br>
