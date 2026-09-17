@@ -1,3 +1,6 @@
+- Journal de bord documentant toutes les étapes du processus, incluant les versions initiales générées par Figma Make ou Stitch, et les modifications apportées.
+- Répondre aux 5 questions du premier bloc du projet.
+- Inscrire toute question posée à l'IA, avec date, prompt, outil utilisé et résultat obtenu.
 ## Bloc 1 — 28 août 2026
 1. Qu'est-ce que j'ai accompli depuis le dernier bloc?
 - J'ai créé le dépôt GitHub de mon portfolio.
