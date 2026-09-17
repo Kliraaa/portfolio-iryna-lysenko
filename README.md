@@ -2,8 +2,8 @@
 Lysenkko Iryna<br>
 Techniques d'intégration multimédia<br>
 lysenko.iryna75gmail.com<br>
-https://Kliraaa.github.com/ (à changer) un lien vers votre Figma Design.<br>
-Lorsque vous copiez le lien dans Figma, assurez-vous de me donner accès à modifier votre fichier Figma en ligne afin que je puisse le consulter et le commenter. Mon courriel pour Figma est marie-michelle.ouellet@cmontmorency.qc.ca.<br>
+https://kliraaa.github.io/<br>
+https://www.figma.com/design/ZC7LM8L9Y9TvYsyybekjDO/Maquette-Figma-Portfolio?node-id=0-1&p=f&t=HM02TLrDQL62rIpl-0 <br>
 
 ![Moodboard principal](assets/photo/Moodboard-principal_v.17.9.png)
 ***Esthétique***
