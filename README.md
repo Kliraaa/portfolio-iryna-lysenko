@@ -5,7 +5,7 @@ lysenko.iryna75gmail.com<br>
 https://Kliraaa.github.com/ (à changer) un lien vers votre Figma Design.<br>
 Lorsque vous copiez le lien dans Figma, assurez-vous de me donner accès à modifier votre fichier Figma en ligne afin que je puisse le consulter et le commenter. Mon courriel pour Figma est marie-michelle.ouellet@cmontmorency.qc.ca.<br>
 
-![Moodboard principal](assets/photo/moodboard_principal.png)
+![Moodboard principal](assets/photo/Moodboard-principal_v.17.9.png)
 ***Esthétique***
 ![Moodboard esthetique](assets/photo/Moodboard-vibe.png)
 ***1.Quel type de poste ou de stage je vise en sortant du programme?***<br>
