@@ -35,5 +35,25 @@
  - Commencer mon demo-reel.
  - Terminer mon logo.
 6. Est-ce que j'ai utilisé l'IA? Si oui, pour quoi et qu'est-ce que ça m'a appris?
-   - Figma make pour faire la maquette. Cela m'as appris que c'est impossible d'avoir quelque chose d'original des le premier prompt, donc il faut adapter le site.
-   - ChatGpt pour générer un croquis de dessin que veux mettre dans mon header.
+- Figma make pour faire la maquette. Cela m'as appris que c'est impossible d'avoir quelque chose d'original des le premier prompt, donc il faut adapter le site.
+- ChatGpt pour générer un croquis de dessin que veux mettre dans mon header.
+  
+## Bloc 3 — 18 septembre 2026
+À faire dans le cours: Faire maquette mobile te maquette pour des projets.
+1. Qu'est-ce que j'ai accompli depuis le dernier bloc?
+- J'ai terminé ma fiche d'identité visuelle.
+- J'ai rédigé mon README.md et PLANIFICATION.md
+ - J'ai terminé mon logo à 90%.
+ - J'ai fait une maquette de mon design de portfolio avec Figma Make et je l'ai importé en tant que le design.
+3. Quelle a été ma principale difficulté et comment je l'ai surmontée?
+  - Mon logo m'as pris trop du temps.
+  - C'était difficile parfois à communiquer avec l'IA pour avoir le résultat que je veux.
+4. Qu'est-ce que j'ai appris que je ne savais pas avant?
+  - Figma Make et comment importer la maquette dans Design. 
+5. Quelle est ma prochaine étape concrète?
+ - Terminer la description des projets que je vais mettre.
+ - Commencer mon demo-reel.
+ - Terminer mon logo.
+6. Est-ce que j'ai utilisé l'IA? Si oui, pour quoi et qu'est-ce que ça m'a appris?
+- Figma make pour faire la maquette. Cela m'as appris que c'est impossible d'avoir quelque chose d'original des le premier prompt, donc il faut adapter le site.
+- ChatGpt pour générer un croquis de dessin que veux mettre dans mon header.
