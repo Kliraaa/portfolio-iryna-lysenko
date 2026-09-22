@@ -39,9 +39,9 @@
 - ChatGpt pour générer un croquis de dessin que veux mettre dans mon header.
   
 ## Bloc 3 — 18 septembre 2026
-À faire dans le cours: Faire maquette mobile te maquette pour des projets.
+À faire dans le cours: Faire maquette mobile et une maquette pour des projets.
 1. Qu'est-ce que j'ai accompli depuis le dernier bloc?
-- J'ai terminé ma fiche d'identité visuelle.
+- J'ai terminé ma maquette mobile.
 - J'ai rédigé mon README.md et PLANIFICATION.md
  - J'ai terminé mon logo à 90%.
  - J'ai fait une maquette de mon design de portfolio avec Figma Make et je l'ai importé en tant que le design.
