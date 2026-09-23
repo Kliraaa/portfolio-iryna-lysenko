@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Iryna Lysenko</title>
     <!-- CSS -->
+    <link rel="stylesheet" href="./css/variables.css">
+    
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/variables.css">
+ 
     <link rel="stylesheet" href="./css/components/navigation.css">
+    <link rel="stylesheet" href="./css/composants/project-card.css">
     <!-- JS -->
     <script src="./js/main.js" defer></script>
     <script src="./js/data.js" defer></script>
@@ -19,11 +22,11 @@
     <header>
         <div class="header_logo">
             <a href="index.html">
-                <img src="img/logo.svg" alt="Logo" />
+                <img src="./assets/icones/logo.svg" alt="Logo"/>
             </a>
         </div>
         <nav class="header_nav">
-            <ul class="header_list">
+            <ul class="header_info">
                 <li class="header_link"><a href="#creations">Créations</a></li>
                 <li class="header_link"><a href="#about">À propos</a></li>
                 <li class="header_link"><a href="#contact">Contact</a></li>
@@ -31,20 +34,48 @@
         </nav>
     </header>
     <main> 
-        <hero>
-            <column class="hero_text">
+        <section class="hero">       
+            <div class="hero_text">
                 <h1 class="hero_title">Iryna</h1>
                 <h1 class="hero_title">Lysenko</h1>
                 <p class="hero_subtitle">Animatrice 2D/3D · Réalisatrice · Concept Artist · Game Dev</p>
-            </column>
-            <column class="hero_image_container">
-                <img src="img/hero-image.png" alt="Iryna Lysenko Autoportrait" class="hero_image" />
-            </column>
-        </hero>
-        <container>
-
-        </container>
+            </div>
+            <div class="hero_image_container">
+                <img src="./assets/images/thumbnails/autoportrait_ai_placeholder.png" alt="Iryna Lysenko Autoportrait" class="hero_image" />
+            </div>
+            <!--Placeholder pour rubain qui bouge-->
+        </section>
+        <section class="creations">
+            <div id="creations" class="creations_title">
+                <h2>Créations</h2> 
+            </div>
+            <div class="creations_list">
+                <!-- Les cartes de projets seront générées ici par JavaScript -->
+                <article class="project-card">
+                    <img class="project-card__image" src="./assets/images/thumbnails/onyxia.png" alt="Aperçu du projet Onyxia">
+                    <div class="project-card__overlay">
+                        <p class="project-card__meta">Concept art - 2026</p>
+                        <h3 class="project-card__title">Onyxia</h3>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="about">
+            <div id="about" class="about_title">
+                <h2>character_profile.exe</h2>
+            </div>
+            <div class="about_content">
+                
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer id="contact">
+        <div class="footer_contact_info">
+            <div class="footer_content">
+                <p>Pour toute demande de collaboration, merci de me contacter par email à l'adresse suivante :</p>
+                <a href="mailto:iryna.lysenko@example.com">iryna.lysenko@example.com</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>  
