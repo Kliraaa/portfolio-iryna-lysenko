@@ -5,9 +5,9 @@ lysenko.iryna75gmail.com<br>
 https://kliraaa.github.io/<br>
 https://www.figma.com/design/ZC7LM8L9Y9TvYsyybekjDO/Maquette-Figma-Portfolio?node-id=0-1&p=f&t=HM02TLrDQL62rIpl-0 <br>
 
-![Moodboard principal](assets/photo/Moodboard-principal_v.17.9.png)
+![Moodboard principal](assets/images/Moodboard-principal_v.17.9.png)
 ***Esthétique***
-![Moodboard esthetique](assets/photo/Moodboard-vibe.png)
+![Moodboard esthetique](assets/images/Moodboard-vibe.png)
 ***1.Quel type de poste ou de stage je vise en sortant du programme?***<br>
 Caméraman, concept artist, game dev, design graphique, animatrice 2D/3D<br>
 ***2.Qui va probablement regarder mon portfolio? (un•e recruteur•e d'agence, une petite entreprise, un•e client•e potentiel•le...)***<br>
