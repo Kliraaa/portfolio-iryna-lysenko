@@ -5,7 +5,7 @@ lysenko.iryna75gmail.com<br>
 https://kliraaa.github.io/<br>
 https://www.figma.com/design/ZC7LM8L9Y9TvYsyybekjDO/Maquette-Figma-Portfolio?node-id=0-1&p=f&t=HM02TLrDQL62rIpl-0 <br>
 
-![Moodboard principal](assets/images/Moodboard-principal_v.17.9.png)
+![Moodboard principal](assets/images/Moodboard-principal.png)
 ***Esthétique***
 ![Moodboard esthetique](assets/images/Moodboard-vibe.png)
 ***1.Quel type de poste ou de stage je vise en sortant du programme?***<br>
