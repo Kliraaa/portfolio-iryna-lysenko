@@ -20,7 +20,7 @@ main {
 
 .hero_text {
     display: grid;
-    align-content: center;
+    align-content: end;
     gap: 0.8rem;
     padding: clamp(2.5rem, 6vw, 6rem);
 }
