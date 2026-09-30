@@ -7,4 +7,9 @@
     --dark: #04070A;
     --dark-rgb: rgb(4 7 10);
     --light: #F3FAFF;
+    --surface: #0b1117;
+    --surface-soft: #111920;
+    --border-soft: #1a242d;
+    --text-muted: #8f9baa;
+    --max-width: 2500px;
     }
