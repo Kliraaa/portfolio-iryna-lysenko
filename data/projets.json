@@ -5,8 +5,8 @@
     "description": "Film court-métrage sur le thème des standards de beauté surréalistes et d’acceptation de soi.",
     "category": "Vidéo",
     "year": "2025",
-    "image": "assets/images/thumbnails/baute-fatale.jpg",
-    "link": "https://vimeo.com/1231540025?share=copy&fl=sv&fe=ci"
+    "image": "./assets/images/thumbnails/baute-fatale.jpg",
+    "embedvimeo": "https://player.vimeo.com/video/1231540025?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
   },
   {
     "id": "onyxia",
@@ -14,7 +14,47 @@
     "description": "Bande d’annonce d’un film imaginaire sur le thème le danger du contrôle que l'IA exerce sur la vie humaine.",
     "category": "Vidéo",
     "year": "2024",
-    "image": "assets/images/thumbnails/onyxia.jpg",
-    "link": ""
+    "image": "./assets/images/thumbnails/onyxia.jpg",
+    "embedvimeo": "https://player.vimeo.com/video/1231715070?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
   },
+  {
+    "id": "glowfall",
+    "title": "Glowfall: Prologue",
+    "description": "Une fille avec les pouvoirs magiques découvre et utilise ses pouvoirs en se promenant dans le niveau.",
+    "category": "Jeu vidéo",
+    "year": "2025",
+    "image": "./assets/images/thumbnails/ascension.png",
+    "link": "https://vimeo.com/1228447864?share=copy&fl=sv&fe=ci"
+  },
+  {
+    "id": "ascension",
+    "title": "L’ascension",
+    "description": "Animation 3D sur ma vision de ce à quoi ressemble l'ascension d'une âme humaine vers le Paradis.",
+    "category": "Animation 3D",
+    "year": "2025",
+    "image": "./assets/images/thumbnails/ascension.png",
+    "embedvimeo": "https://player.vimeo.com/video/1228447864?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+  },
+  {
+    "id": "post-insta",
+    "title": "Design d'une publication pour Instagram",
+    "description": "Une publication pour la semaine de la prévention du suicide.",
+    "category": "Design graphique",
+    "year": "2026",
+    "image": "./assets/images/thumbnails/",
+    "gallery": [
+      "assets/images/cafe-du-coin-2.jpg",
+      "assets/images/cafe-du-coin-3.jpg"
+    ]
+  },
+  
+  {
+    "id": "aout-mars",
+    "title": "L’ascension",
+    "description": "Animation 3D sur ma vision de ce à quoi ressemble l'ascension d'une âme humaine vers le Paradis.",
+    "category": "Animation 3D",
+    "year": "2025",
+    "image": "./assets/images/thumbnails/ascension.png",
+    "link": "https://vimeo.com/1228447864?share=copy&fl=sv&fe=ci"
+  }
 ]
