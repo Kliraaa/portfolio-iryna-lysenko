@@ -1,0 +1,20 @@
+[
+  {
+    "id": "baute-fatale",
+    "title": "Bauté Fatale",
+    "description": "Film court-métrage sur le thème des standards de beauté surréalistes et d’acceptation de soi.",
+    "category": "Vidéo",
+    "year": "2025",
+    "image": "assets/images/thumbnails/baute-fatale.jpg",
+    "link": "https://vimeo.com/1231540025?share=copy&fl=sv&fe=ci"
+  },
+  {
+    "id": "onyxia",
+    "title": "Onyx-IA",
+    "description": "Bande d’annonce d’un film imaginaire sur le thème le danger du contrôle que l'IA exerce sur la vie humaine.",
+    "category": "Vidéo",
+    "year": "2024",
+    "image": "assets/images/thumbnails/onyxia.jpg",
+    "link": ""
+  },
+]
