@@ -18,6 +18,7 @@
     <script src="./js/data.js" defer></script>
     <script src="./js/composants/carte-projet.js" defer></script>
     <script src="./js/composants/modale.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.js"></script>
 </head>
 <body>
     <header>
@@ -71,7 +72,6 @@
                 <div class="about_left_column">
                     <article class="about_panel about_panel--player">
                         <p class="about_kicker">Joueur</p>
-                        <p class="about_name_label">Nom</p>
                         <h3 class="about_name">
                             <span>IRYNA</span>
                             <span class="about_name--accent">LYSENKO</span>
@@ -92,20 +92,15 @@
                     <article class="about_panel about_panel--quest">
                         <p class="about_label">Quête</p>
                         <p>
-                            À la recherche d'une opportunité en agence créative (à l'image de Sid Lee), je souhaite intégrer une équipe de production publicitaire en tant que créateur visuel / monteur. Mon objectif est d'allier mes acquis techniques en tournage et animation 2D/3D à ma sensibilité interdisciplinaire pour concevoir des campagnes immersives et impactantes.
+                            À la recherche d'une opportunité en agence créative, je souhaite intégrer une équipe de production publicitaire en tant que créateur visuel / monteur. Mon objectif est d'allier mes acquis techniques en tournage et animation 2D/3D à ma sensibilité interdisciplinaire pour concevoir des campagnes immersives et impactantes.
                         </p>
                     </article>
                 </div>
 
                 <aside class="about_panel about_panel--skills" aria-label="Compétences">
                     <p class="about_label">Compétences</p>
-                    <div class="skilltree_placeholder" aria-hidden="true">
-                        <span class="skilltree_node skilltree_node--one"></span>
-                        <span class="skilltree_node skilltree_node--two"></span>
-                        <span class="skilltree_node skilltree_node--three"></span>
-                        <span class="skilltree_node skilltree_node--four"></span>
-                        <span class="skilltree_node skilltree_node--five"></span>
-                        <span class="skilltree_node skilltree_node--six"></span>
+                    <div class="skilltree">
+                        <canvas id="radarChart" width="700" height="300"></canvas>
                     </div>
                 </aside>
 

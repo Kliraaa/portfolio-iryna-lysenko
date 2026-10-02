@@ -268,36 +268,6 @@ main {
     clip-path: polygon(50% 0%, 88% 22%, 100% 62%, 72% 100%, 28% 100%, 0% 62%, 12% 22%);
 }
 
-.skilltree_placeholder::before,
-.skilltree_placeholder::after {
-    content: "";
-    position: absolute;
-    inset: 18%;
-    border: 1px solid rgba(225, 20, 60, 0.25);
-    border-radius: 50%;
-}
-
-.skilltree_placeholder::after {
-    inset: 33%;
-}
-
-.skilltree_node {
-    position: absolute;
-    display: block;
-    width: 4.5rem;
-    height: 4.5rem;
-    border-radius: 50%;
-    border: 1px solid rgba(225, 20, 60, 0.8);
-    background: rgba(10, 15, 19, 0.9);
-    box-shadow: 0 0 16px rgba(225, 20, 60, 0.1);
-}
-
-.skilltree_node--one { top: 4%; left: 50%; transform: translateX(-50%); }
-.skilltree_node--two { top: 24%; right: 8%; }
-.skilltree_node--three { top: 52%; right: 10%; }
-.skilltree_node--four { bottom: 12%; right: 30%; }
-.skilltree_node--five { bottom: 16%; left: 18%; }
-.skilltree_node--six { top: 48%; left: 8%; }
 
 .inventory_grid {
     display: grid;
