@@ -2,8 +2,8 @@
 Lysenkko Iryna<br>
 Techniques d'intégration multimédia<br>
 lysenko.iryna75gmail.com<br>
-https://kliraaa.github.io/potfolio-iryna-lysenko<br>
-https://www.figma.com/design/ZC7LM8L9Y9TvYsyybekjDO/Maquette-Figma-Portfolio?node-id=0-1&p=f&t=HM02TLrDQL62rIpl-0 <br>
+[Portfolio](https://kliraaa.github.io/portfolio-iryna-lysenko/)<br>
+[Design Figma](https://www.figma.com/design/ZC7LM8L9Y9TvYsyybekjDO/Maquette-Figma-Portfolio?node-id=0-1&p=f&t=HM02TLrDQL62rIpl-0) <br>
 
 ![Moodboard principal](assets/images/moodboard_principal.png)
 ***Esthétique***
