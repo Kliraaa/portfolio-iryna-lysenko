@@ -39,3 +39,7 @@ P.s. : Une idée que je pensais c’est de faire une interface comme un mini jeu
 - Glowfall
 - L’ascention/ Pixar Pistache
 - TP1 Août/Mars
+
+
+ ${project.embedvimeo ? `<div style="padding:56.25% 0 0 0;position:relative;">
+      <iframe src="${project.embedvimeo}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="${project.title}"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>` : ''}

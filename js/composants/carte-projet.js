@@ -1,14 +1,5 @@
-// ========================================
-// Exercice : du JSON à la carte
-// Suivez les étapes de la page d'exercice, une à la fois.
-// Vérifiez chaque étape dans le navigateur avant de passer à la suivante.
-// ========================================
-
-
-// ÉTAPE 1 : charger les données avec fetch()
-// Écrire une fonction async loadProjects() qui retourne le tableau de data/projects.json
 async function loadProjects() {
-  const response = await fetch('data/projects.json');
+  const response = await fetch('data/projets.json');
   const projects = await response.json();            
   return projects;                                   
 }
@@ -33,8 +24,7 @@ init();
 function createProjectCard(project) {
     return `
     <article class="project-card">
-    <div style="padding:56.25% 0 0 0;position:relative;">
-      <iframe src="${project.embedvimeo}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Ascension - 3D animated short film"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+   
         <img class="project-card__image" src="${project.image}" alt="${project.title}">
         <div class="project-card__content">
             <h3 class="project-card__title">${project.title}</h3>
@@ -45,12 +35,3 @@ function createProjectCard(project) {
     `;
 }
 
-
-
-// ÉTAPE 4 : toutes les cartes
-// Afficher une carte pour chaque projet dans .projects__grid
-
-
-
-
-// BONUS : afficher le lien « Voir en ligne » seulement si le projet en a un

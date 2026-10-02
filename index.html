@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Métadonnées et ressources principales de la page -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Iryna Lysenko</title>
-    <!-- CSS -->
+    <!-- Feuilles de style -->
     <link rel="stylesheet" href="./css/variables.css">
     
     <link rel="stylesheet" href="./css/base.css">
@@ -13,7 +14,7 @@
     <link rel="stylesheet" href="./css/composants/navigation.css">
     <link rel="stylesheet" href="./css/composants/project-card.css">
     <link rel="stylesheet" href="./css/composants/modale.css">
-    <!-- JS -->
+    <!-- Scripts et bibliothèques -->
     <script src="./js/main.js" defer></script>
     <script src="./js/data.js" defer></script>
     <script src="./js/composants/carte-projet.js" defer></script>
@@ -21,6 +22,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.js"></script>
 </head>
 <body>
+    <!-- En-tête et navigation principale -->
     <header>
         <div class="header_logo">
             <a href="index.html">
@@ -36,7 +38,9 @@
             </ul>
         </nav>
     </header>
+    <!-- Contenu principal du portfolio -->
     <main> 
+        <!-- Présentation introductive -->
         <section class="hero">       
             <div class="hero_text">
                 <h1 class="hero_title">Iryna</h1>
@@ -48,22 +52,21 @@
             </div>
             <!--Placeholder pour rubain qui bouge-->
         </section>
+        <!-- Galerie des créations et projets -->
         <section class="creations">
-            <div id="creations" class="creations_title">
-                <h2>Créations</h2> 
-            </div>
-            <div class="creations_list">
+            <h2 id="creations" class="creations_title">Créations</h2> 
+            <div class="projects__grid">
                 <!-- Les cartes de projets seront générées ici par JavaScript -->
-                <article class="project-card">
+                <!-- <article class="project-card">
                     <img class="project-card__image" src="./assets/images/thumbnails/onyxia.png" alt="Aperçu du projet Onyxia">
                     <div class="project-card__overlay">
                         <p class="project-card__meta">Concept art - 2026</p>
                         <h3 class="project-card__title">Onyxia</h3>
                     </div>
-                </article>
+                </article>-->
             </div>
         </section>
-        <!-- Section "À propos" -->
+        <!-- Profil, compétences et outils utilisés -->
         <section class="about">
             <div id="about" class="about_title">
                 <h2>character_profile.exe</h2>
@@ -152,6 +155,7 @@
             </div>
         </section>
     </main>
+    <!-- Coordonnées et contact -->
     <footer id="contact">
         <div class="footer_contact_info">
             <div class="footer_content">
