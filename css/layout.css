@@ -14,8 +14,8 @@ main {
     display: grid;
     grid-template-columns: 1.25fr 1fr;
     min-height: 78vh;
-    border: 1px solid var(--border-soft);
-    background: var(--dark-blue-rgba);
+    /*border: 1px solid var(--border-soft);
+    background: var(--dark-blue-rgba); */
 }
 
 .hero_text {
@@ -64,6 +64,12 @@ main {
     height: 100%;
     object-fit: cover;
     filter: grayscale(18%) contrast(1.02);
+    mask-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 1) 100%
+    );
 }
 
 .creations,
