@@ -77,6 +77,6 @@
 .project-card__description {
 	margin-top: 0.75rem;
 	color: var(--text-muted);
-	font-size: 0.84rem;
+	font-size: 1.25rem;
 	max-width: 56ch;
 }

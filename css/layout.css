@@ -103,6 +103,7 @@ main {
 
 .about_panel {
     padding: clamp(1.1rem, 2vw, 2rem);
+    font-size: 1.1rem;
 }
 
 .about_panel--player {
@@ -127,6 +128,8 @@ main {
     align-content: center;
     gap: 0.8rem;
     border-right: 1px solid var(--border-soft);
+    color: var(--text-muted);
+    line-height: 1.7;
 }
 
 .about_panel--skills {
@@ -198,7 +201,6 @@ main {
     display: grid;
     gap: 0.6rem;
     color: var(--text-muted);
-    font-size: 0.82rem;
     line-height: 1.5;
 }
 
@@ -212,12 +214,6 @@ main {
     position: absolute;
     left: 0;
     color: var(--color-primary);
-}
-
-.about_panel--quest p:last-child {
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    line-height: 1.7;
 }
 
 .skilltree_placeholder {

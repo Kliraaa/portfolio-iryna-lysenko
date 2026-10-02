@@ -24,7 +24,7 @@
     "category": "Jeu vidéo",
     "year": "2025",
     "image": "./assets/images/thumbnails/Glowfall.png",
-    "link": "https://vimeo.com/1228447864?share=copy&fl=sv&fe=ci"
+    "link": "https://lysira.itch.io/glowfall-prologue"
   },
   {
     "id": "ascension",
@@ -50,10 +50,10 @@
   {
     "id": "aout-mars",
     "title": "Aout-Mars",
-    "description": "Animation 3D sur ma vision de ce à quoi ressemble l'ascension d'une âme humaine vers le Paradis.",
+    "description": "Animation de 28 secondes en style de Corporate Memphis.",
     "category": "Animation 2D",
     "year": "2024",
     "image": "./assets/images/thumbnails/aout_mars.png",
-    "link": ""
+    "link": "https://player.vimeo.com/video/1232456620?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
   }
 ]
