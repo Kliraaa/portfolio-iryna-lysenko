@@ -3,7 +3,8 @@
     --color-primary-rgb: rgb(225, 20, 60);
     --color-dark-primary: #A01735;
     --color-dark-primary-rgb: rgb(160, 23, 53);
-    --gray: #1E282F;
+    --dark-blue: #1E282F;
+    --dark-blue-rgba: rgba(30, 40, 47, 0.35);
     --dark: #04070A;
     --dark-rgb: rgb(4 7 10);
     --light: #F3FAFF;
@@ -11,5 +12,5 @@
     --surface-soft: #111920;
     --border-soft: #1a242d;
     --text-muted: #8f9baa;
-    --max-width: 2500px;
+    --max-width: 2200px;
     }

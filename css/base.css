@@ -16,6 +16,7 @@ html {
 
 body {
     margin: 0;
+    padding: 0 5%;
     background: var(--dark);
     color: var(--light);
     font-family: "Georgia", "Times New Roman", serif;
@@ -32,9 +33,12 @@ img {
     max-width: 100%;
 }
 
-h1,
-h2,
-h3,
-p {
+h1,h2,h3,p {
     margin: 0;
+}
+
+h1,h2,h3 {
+    margin: 0;
+    font-family: "Vogue", "Georgia", serif;
+    font-weight: 400;
 }

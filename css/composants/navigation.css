@@ -14,9 +14,20 @@ header {
     backdrop-filter: blur(6px);
 }
 
+.header_logo {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+    letter-spacing: 0.22em;
+    transition: transform 260ms ease, letter-spacing 260ms ease;
+    transform-origin: start;
+}
+
 .header_logo img {
-    width: 5rem;
+    width: 3rem;
     height: auto;
+    transition: transform 260ms ease;
+    transform-origin: center;
 }
 
 .header_info {
@@ -35,7 +46,13 @@ header {
     transition: color 180ms ease;
 }
 
-.header_link a:hover,
-.header_link a:focus-visible {
-    color: var(--color-primary);
+.header_logo img:hover,
+.header_logo img:focus-visible {
+    content: url("../../assets/images/logo-2026/logo_lys-png.png");
+    transform: scale(1.08);
+}
+
+.header_logo:hover,
+.header_logo:focus-visible {
+    letter-spacing: 0.5em;
 }

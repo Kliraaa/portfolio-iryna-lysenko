@@ -15,7 +15,7 @@ main {
     grid-template-columns: 1.25fr 1fr;
     min-height: 78vh;
     border: 1px solid var(--border-soft);
-    background: linear-gradient(120deg, #050a0f 45%, #0a0f16 100%);
+    background: var(--dark-blue-rgba);
 }
 
 .hero_text {
@@ -120,11 +120,249 @@ main {
 }
 
 .about_content {
-    min-height: 280px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "left skills"
+        "inventory inventory";
+    min-height: 560px;
     border: 1px solid var(--border-soft);
-    background: var(--surface);
+    background: linear-gradient(180deg, rgba(9, 13, 18, 0.95), rgba(6, 9, 13, 0.98));
+    overflow: hidden;
 }
 
+.about_left_column {
+    grid-area: left;
+    display: grid;
+    grid-template-rows: minmax(180px, auto) minmax(180px, auto) minmax(220px, auto);
+}
+
+.about_panel {
+    padding: clamp(1.1rem, 2vw, 2rem);
+}
+
+.about_panel--player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid var(--border-soft);
+    border-bottom: 1px solid var(--border-soft);
+    background: rgba(12, 16, 20, 0.82);
+}
+
+.about_panel--mbti {
+    display: grid;
+    align-content: center;
+    gap: 0.8rem;
+    border-right: 1px solid var(--border-soft);
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.about_panel--quest {
+    display: grid;
+    align-content: center;
+    gap: 0.8rem;
+    border-right: 1px solid var(--border-soft);
+}
+
+.about_panel--skills {
+    grid-area: skills;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    gap: 1rem;
+    padding: clamp(1.2rem, 2vw, 2.2rem);
+    border-left: 1px solid var(--border-soft);
+    background: rgba(10, 14, 18, 0.6);
+}
+
+.about_panel--inventory {
+    grid-area: inventory;
+    display: grid;
+    align-content: start;
+    gap: 1rem;
+    background: rgba(10, 14, 18, 0.78);
+}
+
+.about_kicker,
+.about_label,
+.about_name_label {
+    font-size: 0.52rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.about_name_label {
+    margin-top: 0.9rem;
+}
+
+.about_name {
+    display: grid;
+    gap: 0.05em;
+    font-family: "Vogue", "Georgia", serif;
+    font-size: clamp(2.6rem, 5vw, 5.8rem);
+    line-height: 0.8;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.about_name span {
+    display: block;
+}
+
+.about_name--accent {
+    color: var(--color-primary);
+}
+
+.mbti_code {
+    font-family: "Vogue", "Georgia", serif;
+    font-size: clamp(2.3rem, 3vw, 3.4rem);
+    color: var(--light);
+}
+
+.mbti_title {
+    font-family: "Vogue", "Georgia", serif;
+    font-size: clamp(1.4rem, 2vw, 2rem);
+    color: var(--color-primary);
+}
+
+.mbti_traits {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.6rem;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+.mbti_traits li {
+    position: relative;
+    padding-left: 0.9rem;
+}
+
+.mbti_traits li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+}
+
+.about_panel--quest p:last-child {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.skilltree_placeholder {
+    position: relative;
+    width: min(100%, 420px);
+    max-width: calc(100% - 10%);
+    aspect-ratio: 1;
+    border: 1px solid rgba(225, 20, 60, 0.7);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(225, 20, 60, 0.08), rgba(225, 20, 60, 0.02) 52%, transparent 80%);
+    box-shadow: inset 0 0 0 1px rgba(225, 20, 60, 0.16);
+    clip-path: polygon(50% 0%, 88% 22%, 100% 62%, 72% 100%, 28% 100%, 0% 62%, 12% 22%);
+}
+
+.skilltree_placeholder::before,
+.skilltree_placeholder::after {
+    content: "";
+    position: absolute;
+    inset: 18%;
+    border: 1px solid rgba(225, 20, 60, 0.25);
+    border-radius: 50%;
+}
+
+.skilltree_placeholder::after {
+    inset: 33%;
+}
+
+.skilltree_node {
+    position: absolute;
+    display: block;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    border: 1px solid rgba(225, 20, 60, 0.8);
+    background: rgba(10, 15, 19, 0.9);
+    box-shadow: 0 0 16px rgba(225, 20, 60, 0.1);
+}
+
+.skilltree_node--one { top: 4%; left: 50%; transform: translateX(-50%); }
+.skilltree_node--two { top: 24%; right: 8%; }
+.skilltree_node--three { top: 52%; right: 10%; }
+.skilltree_node--four { bottom: 12%; right: 30%; }
+.skilltree_node--five { bottom: 16%; left: 18%; }
+.skilltree_node--six { top: 48%; left: 8%; }
+
+.inventory_grid {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    gap: 0.75rem;
+}
+
+.inventory_case {
+    display: grid;
+    justify-items: center;
+    gap: 0.55rem;
+    padding: 0.7rem 0.45rem;
+    border: 1px solid var(--border-soft);
+    background: rgba(14, 21, 27, 0.8);
+    min-height: 130px;
+    min-width: 0;
+}
+
+.inventory_case__category {
+    font-size: 0.46rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.inventory_case img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.15));
+}
+
+.inventory_case__name {
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--light);
+    text-align: center;
+}
+
+@media (max-width: 960px) {
+    .about_content {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "left"
+            "skills"
+            "inventory";
+    }
+
+    .about_left_column {
+        grid-template-rows: auto;
+    }
+
+    .about_left_column > .about_panel,
+    .about_panel--skills,
+    .about_panel--inventory {
+        border-right: 0;
+        border-left: 0;
+        border-bottom: 1px solid var(--border-soft);
+    }
+
+    .inventory_grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
 footer {
     margin-bottom: 1.25rem;
     border-top: 1px solid var(--border-soft);
@@ -133,7 +371,7 @@ footer {
 
 .footer_contact_info {
     border: 1px solid var(--border-soft);
-    background: var(--surface);
+    background: var(--dark-blue-rgba);
     padding: clamp(1.25rem, 3vw, 2rem);
 }
 
