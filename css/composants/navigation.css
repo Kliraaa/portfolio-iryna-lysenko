@@ -58,7 +58,7 @@ header {
 .nav_logo img:focus-visible,
 .nav_footer_logo img:hover,
 .nav_footer_logo img:focus-visible {
-    content: url("../../assets/images/logo-2026/logo_lys-png.png");
+    content: url("../../assets/images/logo-2026/logo_lys-svg.svg");
     transform: scale(1.08);
     filter: drop-shadow(0 0 0.9rem var(--color-primary));
 }

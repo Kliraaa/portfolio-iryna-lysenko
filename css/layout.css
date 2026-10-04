@@ -310,20 +310,26 @@ main {
     max-width: 620px;
 }
 
+.contact_info_element {
+    margin-bottom: 1.25rem
+}
+
 .contact_info p {
-    margin-bottom: 0.75rem;
+    /*margin-bottom: 0.75rem;*/
     color: var(--text-muted);
 }
 
 .contact_info a {
     font-family: "BAHNSCHRIFT", sans-serif;
-    font-size: 1rem;
+    font-size: 1.125rem;
+    transition: color 180ms ease, filter 180ms ease;
     color: var(--light);
 }
 
 .contact_info a:hover,
 .contact_info a:focus-visible {
     color: var(--color-primary);
+    filter: drop-shadow(0 0 0.9rem var(--color-primary));
 }
 
 /* Footer --------------------------------------------------------*/

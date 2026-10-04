@@ -5,7 +5,7 @@
     "description": "Film court-métrage sur le thème des standards de beauté surréalistes et d’acceptation de soi.",
     "category": "Vidéo",
     "year": "2025",
-    "image": "assets/images/thumbnails/beaute_fatale.png",
+    "image": "assets/images/thumbnails/beaute_fatale.webp",
     "embedvimeo": "https://player.vimeo.com/video/1231540025?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
   },
   {
@@ -14,7 +14,7 @@
     "description": "Bande d’annonce d’un film imaginaire sur le thème le danger du contrôle que l'IA exerce sur la vie humaine.",
     "category": "Vidéo",
     "year": "2024",
-    "image": "assets/images/thumbnails/onyxia.png",
+    "image": "assets/images/thumbnails/onyxia.webp",
     "embedvimeo": "https://player.vimeo.com/video/1231715070?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
   },
   {
@@ -23,7 +23,7 @@
     "description": "Une fille avec les pouvoirs magiques découvre et utilise ses pouvoirs en se promenant dans le niveau.",
     "category": "Jeu vidéo",
     "year": "2025",
-    "image": "./assets/images/thumbnails/Glowfall.png",
+    "image": "./assets/images/thumbnails/Glowfall.webp",
     "link": "https://lysira.itch.io/glowfall-prologue"
   },
   {
@@ -41,7 +41,7 @@
     "description": "Une publication pour la semaine de la prévention du suicide.",
     "category": "Design graphique",
     "year": "2026",
-    "image": "./assets/images/thumbnails/post_insta-no_text.png",
+    "image": "./assets/images/thumbnails/post_insta-no_text.webp",
     "gallery": [
 
     ]
@@ -53,7 +53,7 @@
     "description": "Animation mosaique de 28 secondes en style de Corporate Memphis.",
     "category": "Animation 2D",
     "year": "2024",
-    "image": "./assets/images/thumbnails/aout_mars.png",
+    "image": "./assets/images/thumbnails/aout_mars.webp",
     "link": "https://player.vimeo.com/video/1232456620?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
   }
 ]
