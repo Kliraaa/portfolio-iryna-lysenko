@@ -31,6 +31,7 @@ header {
 }
 
 .header_info {
+    font-family: "Vogue", serif;
     display: flex;
     align-items: center;
     gap: 1.75rem;
@@ -40,7 +41,7 @@ header {
 }
 
 .header_link a {
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     letter-spacing: 0.22em;
     text-transform: uppercase;
     transition: color 180ms ease;

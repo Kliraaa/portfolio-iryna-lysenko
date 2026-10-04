@@ -27,7 +27,7 @@ function createProjectCard(project) {
    
         <img class="project-card__image" src="${project.image}" alt="${project.title}">
         <div class="project-card__content">
-            <h3 class="project-card__title">${project.title}</h3>
+            <h2 class="project-card__title">${project.title}</h2>
             <p class="project-card__meta">${project.category} · ${project.year}</p>
             <p class="project-card__description">${project.description}</p>
         </div>

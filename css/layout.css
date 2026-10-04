@@ -82,10 +82,12 @@ main {
     color: var(--color-primary);
 }
 
-
 .about_content {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     grid-template-areas:
         "left skills"
         "inventory inventory";
@@ -96,14 +98,33 @@ main {
 }
 
 .about_left_column {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: 0;
     grid-area: left;
     display: grid;
     grid-template-rows: minmax(180px, auto) minmax(180px, auto) minmax(220px, auto);
 }
 
-.about_panel {
+.about_left_column > * {
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: 0;
+    overflow: auto;
+}
+
+.about_panel,
+.about_panel--player,
+.about_panel--mbti,
+.about_panel--quest,
+.about_panel--skills,
+.about_panel--inventory {
     padding: clamp(1.1rem, 2vw, 2rem);
     font-size: 1.1rem;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 .about_panel--player {
@@ -115,58 +136,13 @@ main {
     background: rgba(12, 16, 20, 0.82);
 }
 
-.about_panel--mbti {
-    display: grid;
-    align-content: center;
-    gap: 0.8rem;
-    border-right: 1px solid var(--border-soft);
-    border-bottom: 1px solid var(--border-soft);
-}
-
-.about_panel--quest {
-    display: grid;
-    align-content: center;
-    gap: 0.8rem;
-    border-right: 1px solid var(--border-soft);
-    color: var(--text-muted);
-    line-height: 1.7;
-}
-
-.about_panel--skills {
-    grid-area: skills;
-    display: grid;
-    align-content: center;
-    justify-items: center;
-    gap: 1rem;
-    padding: clamp(1.2rem, 2vw, 2.2rem);
-    border-left: 1px solid var(--border-soft);
-    background: rgba(10, 14, 18, 0.6);
-}
-
-.about_panel--inventory {
-    grid-area: inventory;
-    display: grid;
-    align-content: start;
-    gap: 1rem;
-    background: rgba(10, 14, 18, 0.78);
-}
-
-.about_kicker,
-.about_label,
-.about_name_label {
-    font-size: 0.52rem;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-}
-
 .about_name_label {
     margin-top: 0.9rem;
 }
 
 .about_name {
     display: grid;
-    gap: 0.05em;
+    gap: 0.05rem;
     font-family: "Vogue", "Georgia", serif;
     font-size: clamp(2.6rem, 5vw, 5.8rem);
     line-height: 0.8;
@@ -182,15 +158,21 @@ main {
     color: var(--color-primary);
 }
 
+.about_panel--mbti {
+    display: grid;
+    align-content: center;
+    gap: 0.8rem;
+    border-right: 1px solid var(--border-soft);
+    border-bottom: 1px solid var(--border-soft);
+}
+
 .mbti_code {
-    font-family: "Vogue", "Georgia", serif;
-    font-size: clamp(2.3rem, 3vw, 3.4rem);
+    font-size: 2.3rem;
     color: var(--light);
 }
 
 .mbti_title {
-    font-family: "Vogue", "Georgia", serif;
-    font-size: clamp(1.4rem, 2vw, 2rem);
+    font-size: 1.4rem;
     color: var(--color-primary);
 }
 
@@ -205,6 +187,7 @@ main {
 }
 
 .mbti_traits li {
+    font-family: "BAHNSCHRIFT", sans-serif;
     position: relative;
     padding-left: 0.9rem;
 }
@@ -215,11 +198,35 @@ main {
     left: 0;
     color: var(--color-primary);
 }
+.about_panel--quest {
+    display: grid;
+    align-content: center;
+    gap: 0.8rem;
+    border-right: 1px solid var(--border-soft);
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+.about_panel--skills {
+    grid-area: skills;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    gap: 1rem;
+    padding: clamp(1.2rem, 2vw, 2.2rem);
+    border-left: 1px solid var(--border-soft);
+    background: rgba(10, 14, 18, 0.6);
+    overflow: hidden;
+}
 
 .skilltree_placeholder {
     position: relative;
+    box-sizing: border-box;
     width: min(100%, 420px);
-    max-width: calc(100% - 10%);
+    max-width: 100%;
     aspect-ratio: 1;
     border: 1px solid rgba(225, 20, 60, 0.7);
     border-radius: 50%;
@@ -229,9 +236,18 @@ main {
 }
 
 
+.about_panel--inventory {
+    grid-area: inventory;
+    display: grid;
+    align-content: start;
+    gap: 1rem;
+    background: rgba(10, 14, 18, 0.78);
+}
 .inventory_grid {
     display: grid;
-    grid-template-columns: repeat(8, minmax(0, 1fr));
+    min-width: 0;
+    padding: 0.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(120px, 100%), 1fr));
     gap: 0.75rem;
 }
 
@@ -268,6 +284,16 @@ main {
     text-align: center;
 }
 
+
+.about_joueur,
+.about_label,
+.about_name_label {
+    font-size: 0.52rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
 @media (max-width: 960px) {
     .about_content {
         grid-template-columns: 1fr;
@@ -291,6 +317,16 @@ main {
 
     .inventory_grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+        .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .hero_image_container {
+        border-left: 0;
+        border-top: 1px solid var(--border-soft);
+        min-height: 380px;
     }
 }
 footer {
@@ -323,33 +359,4 @@ footer {
 .footer_content a:hover,
 .footer_content a:focus-visible {
     color: var(--color-primary);
-}
-
-@media (max-width: 960px) {
-    .hero {
-        grid-template-columns: 1fr;
-        min-height: auto;
-    }
-
-    .hero_image_container {
-        border-left: 0;
-        border-top: 1px solid var(--border-soft);
-        min-height: 380px;
-    }
-
-    .creations_list {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        grid-auto-rows: minmax(150px, auto);
-    }
-
-    .creations_list .project-card,
-    .creations_list .project-card:nth-child(6n + 1),
-    .creations_list .project-card:nth-child(6n + 2),
-    .creations_list .project-card:nth-child(6n + 3),
-    .creations_list .project-card:nth-child(6n + 4),
-    .creations_list .project-card:nth-child(6n + 5),
-    .creations_list .project-card:nth-child(6n + 6) {
-        grid-column: span 2;
-        grid-row: span 1;
-    }
 }
