@@ -59,9 +59,9 @@ main {
     object-fit: cover;
     mask-image: linear-gradient(
         to right,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.35) 50%,
-        rgba(0, 0, 0, 1) 100%
+        rgba(4, 7, 10, 0) 0%,
+        rgba(4, 7, 10, 0.35) 50%,
+        rgba(4, 7, 10, 1) 100%
     );
 }
 /* About / character Section --------------------------------------------------------*/
@@ -153,7 +153,7 @@ main {
 
 .about_mbti--accent {
     font-size: 1.5rem;
-    color: var(--color-primary);
+    /* color: var(--color-primary); */
 }
 
 /* Section - MBTI Info --------------------------------------------------------*/
@@ -332,13 +332,6 @@ main {
     filter: drop-shadow(0 0 0.9rem var(--color-primary));
 }
 
-/* Footer --------------------------------------------------------*/
-footer {
-    margin-bottom: 1.25rem;
-    border-top: 1px solid var(--border-soft);
-    padding-top: 2.5rem;
-}
-
 /* Responsive Design --------------------------------------------------------*/
 @media (max-width: 960px) {
     .about_content {
@@ -364,15 +357,44 @@ footer {
     .inventory_grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-        .hero {
-        grid-template-columns: 1fr;
-        min-height: auto;
+    
+    .hero {
+        position: relative;
+        display: block;
+        min-height: 78vh;
     }
 
     .hero_image_container {
-        border-left: 0;
-        border-top: 1px solid var(--border-soft);
-        min-height: 380px;
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        min-height: 0;
+        border: 0;
+        overflow: hidden;
+       /* background: var(--dark-blue-rgba);*/
+    }
+
+    .hero_image_container::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            to left,
+            rgba(4, 7, 10, 0) 0%,
+            rgba(4, 7, 10, 0.35) 50%,
+            rgba(4, 7, 10, 1) 100%
+        );
+    }
+
+    /*.hero_image {
+        opacity: 0.62;
+    }*/
+
+    .hero_text {
+        position: relative;
+        z-index: 1;
+        min-height: 78vh;
+        box-sizing: border-box;
     }
 
     .contact {

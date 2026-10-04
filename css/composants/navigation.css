@@ -69,12 +69,19 @@ header {
     text-shadow: 0 0 0.9rem currentColor;
 }
 
-/*footer---------------------------------------------------------*/
+/* Footer --------------------------------------------------------*/
+footer {
+    margin-bottom: 1rem;
+    border-top: 1px solid var(--border-soft);
+    padding-top: 2.5rem;
+}
+
+
 .nav_footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.25rem 0;
+    padding: 1rem 0;
     border-top: 1px solid var(--border-soft);
 }
 
