@@ -2,7 +2,7 @@
     --color-primary: #E1143C;
     --color-primary-rgb: rgb(225, 20, 60);
     --color-dark-primary: #A01735;
-    --color-dark-primary-rgb: rgb(160, 23, 53);
+    --color-dark-primary-rgba: rgba(160, 23, 53, 0.5);
     --dark-blue: #1E282F;
     --dark-blue-rgba: rgba(30, 40, 47, 0.35);
     --dark: #04070A;

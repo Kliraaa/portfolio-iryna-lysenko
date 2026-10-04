@@ -37,7 +37,7 @@
   },
   {
     "id": "post-insta",
-    "title": "Design d'une publication pour Instagram",
+    "title": "Publication pour Instagram",
     "description": "Une publication pour la semaine de la prévention du suicide.",
     "category": "Design graphique",
     "year": "2026",
@@ -50,7 +50,7 @@
   {
     "id": "aout-mars",
     "title": "Aout-Mars",
-    "description": "Animation de 28 secondes en style de Corporate Memphis.",
+    "description": "Animation mosaique de 28 secondes en style de Corporate Memphis.",
     "category": "Animation 2D",
     "year": "2024",
     "image": "./assets/images/thumbnails/aout_mars.png",

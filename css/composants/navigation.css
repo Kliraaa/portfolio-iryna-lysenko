@@ -14,7 +14,7 @@ header {
     backdrop-filter: blur(6px);
 }
 
-.header_logo {
+.nav_logo, .nav_footer_logo {
     display: flex;
     align-items: center;
     gap: 1.75rem;
@@ -23,14 +23,14 @@ header {
     transform-origin: start;
 }
 
-.header_logo img {
+.nav_logo img {
     width: 3rem;
     height: auto;
     transition: transform 260ms ease;
     transform-origin: center;
 }
 
-.header_info {
+.nav_info {
     font-family: "Vogue", serif;
     display: flex;
     align-items: center;
@@ -40,20 +40,47 @@ header {
     list-style: none;
 }
 
-.header_link a {
+.nav_link a {
+    display: inline-block;
     font-size: 0.75rem;
     letter-spacing: 0.22em;
     text-transform: uppercase;
-    transition: color 180ms ease;
+    transition: color 180ms ease, transform 180ms ease, text-shadow 180ms ease;
 }
 
-.header_logo img:hover,
-.header_logo img:focus-visible {
+.nav_link a:hover,
+.nav_link a:focus-visible {
+    transform: scale(1.08);
+    text-shadow: 0 0 0.9rem currentColor;
+}
+
+.nav_logo img:hover,
+.nav_logo img:focus-visible,
+.nav_footer_logo img:hover,
+.nav_footer_logo img:focus-visible {
     content: url("../../assets/images/logo-2026/logo_lys-png.png");
     transform: scale(1.08);
+    filter: drop-shadow(0 0 0.9rem var(--color-primary));
 }
 
-.header_logo:hover,
-.header_logo:focus-visible {
+.nav_logo:hover,
+.nav_logo:focus-visible {
     letter-spacing: 0.5em;
+    text-shadow: 0 0 0.9rem currentColor;
+}
+
+/*footer---------------------------------------------------------*/
+.nav_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0;
+    border-top: 1px solid var(--border-soft);
+}
+
+.nav_footer_logo img {
+    width: 1.8rem;
+    height: auto;
+    transition: transform 260ms ease;
+    transform-origin: center;
 }
