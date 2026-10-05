@@ -1,39 +1,74 @@
 [
-  {
+  { 
     "id": "baute-fatale",
-    "title": "Bauté Fatale",
-    "description": "Film court-métrage sur le thème des standards de beauté surréalistes et d’acceptation de soi.",
+    "title": "Beauté Fatale",
+    "description": "Court métrage sur le thème des standards de beauté irréalistes et sur l’acceptation de soi.",
     "category": "Vidéo",
     "year": "2025",
+    "role":"Artiste de storyboard, directrice de la photographie (caméraman), bruitrice, monteuse",
+      "members": [
+        "Iryna Lysenko",
+        "Mathieu Fréchette",
+        "Maya Lamontagne",
+        "Cyrine Ghiat"
+      ],
+    "software": "DaVinci Resolve",
     "image": "assets/images/thumbnails/beaute_fatale.webp",
-    "embedvimeo": "https://player.vimeo.com/video/1231540025?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+    "embedvimeo": "https://player.vimeo.com/video/1231540025?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    "description_task": "Il fallait utiliser des lentilles macro, des images monochromes et de la mosaïque au montage, ce qui permettait à notre équipe de faire preuve de créativité et d’expression dans le récit de ce film de deux minutes.",
+    "description_technique": "En tant qu’artiste de storyboard et caméraman, j’étais responsable de la direction de la photographie du projet. Je devais adapter le travail au fait que tous les plans seraient réalisés en macro, à l’exception de quelques-uns, et en monochrome."
   },
   {
     "id": "onyxia",
     "title": "Onyx-IA",
-    "description": "Bande d’annonce d’un film imaginaire sur le thème le danger du contrôle que l'IA exerce sur la vie humaine.",
+    "description": "Bande-annonce d’un film imaginaire sur les dangers du contrôle exercé par l’IA sur la vie humaine.",
     "category": "Vidéo",
     "year": "2024",
+    "members": [
+      "Iryna Lysenko",
+      "Rada Ben Maiz",
+      "Adam Ben Fradj",
+      "Chaima Chahed",
+      "Cyrine Ghiat"
+    ],
+    "role":"Réalisatrice, actrice, directrice de montage, artiste de storyboard, scénariste",
+    "software ": "DaVinci Resolve",
     "image": "assets/images/thumbnails/onyxia.webp",
-    "embedvimeo": "https://player.vimeo.com/video/1231715070?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+    "embedvimeo": "https://player.vimeo.com/video/1231715070?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    "description_task": "Le professeur nous a demandé de réaliser une publicité sur un thème libre. Notre équipe a donc choisi de créer la bande-annonce d’un film. Il fallait répartir entre les membres de l’équipe les tâches de la préproduction (synopsis, scénario, storyboard, dépouillement, horaire et moodboard), de la production (éclairage, caméra, son et acteurs) et de la postproduction (montage et autoévaluation).",
+    "description_technique": "En tant que réalisatrice, j’ai réparti les tâches entre les membres de l’équipe. Pour la préproduction, j’ai rédigé le synopsis, le scénario et le dépouillement et, en me basant sur ceux-ci, j’ai dessiné le storyboard. Pour la production, j’étais actrice et je donnais des directives à mes collègues afin de respecter l’horaire de tournage et de coordonner le travail sur le son et les caméras. Pour la postproduction, j’ai monté une scène et supervisé le montage général."
   },
   {
     "id": "glowfall",
     "title": "Glowfall: Prologue",
-    "description": "Une fille avec les pouvoirs magiques découvre et utilise ses pouvoirs en se promenant dans le niveau.",
+    "description": "Une fille dotée de pouvoirs magiques découvre et utilise ceux-ci en explorant le niveau.",
     "category": "Jeu vidéo",
     "year": "2025",
+    "role": "Développeuse, level designer, programmeuse",
+    "software": "Godot Engine - GDScript",
     "image": "./assets/images/thumbnails/Glowfall.webp",
-    "link": "https://lysira.itch.io/glowfall-prologue"
+    "link": "https://lysira.itch.io/glowfall-prologue",
+    "gallery": [
+      "./assets/images/gallery/glowfall_1.webp",
+      "./assets/images/gallery/glowfall_2.webp",
+      "./assets/images/gallery/glowfall_3.webp",
+      "./assets/images/gallery/glowfall_4.webp"
+    ],
+    "description_task": "Le projet consistait à réaliser une expérience ludique complète intégrant des images et des échantillons sonores originaux, dans laquelle le joueur progresse en accomplissant différentes actions. Le projet devait inclure des interfaces, des transitions et des instructions de jeu efficaces.",
+    "description_technique": "J’ai trouvé des ressources visuelles et sonores libres de droits et je les ai intégrées au niveau, que j’ai construit moi-même. J’ai codé les mécaniques du jeu : la collecte de lumière utilisée comme ressource, l’interaction avec l’environnement et la confrontation avec un ennemi."
   },
   {
     "id": "ascension",
     "title": "L’ascension",
-    "description": "Animation 3D sur ma vision de ce à quoi ressemble l'ascension d'une âme humaine vers le Paradis.",
+    "description": "Animation 3D représentant ma vision de l’ascension d’une âme humaine vers le paradis.",
     "category": "Animation 3D",
     "year": "2025",
+    "role": "Réalisatrice, directrice artistique, animatrice 3D, monteuse",
+    "software": "Maya, DaVinci Resolve",
     "image": "./assets/images/thumbnails/ascension.jpg",
-    "embedvimeo": "https://player.vimeo.com/video/1228447864?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+    "embedvimeo": "https://player.vimeo.com/video/1228447864?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    "description_task": "Le projet consistait à créer une animation 3D d’une durée minimale de 60 secondes. Le film devait être composé de plusieurs séquences d’animation se déroulant dans un environnement 3D original, créé par moi-même à partir de modèles libres de droits trouvés sur Internet.",
+    "description_technique": "Dans ce projet, j’étais responsable de la préproduction (moodboard, scénario et storyboard), de la production (création de l’environnement, modélisation du personnage principal et animation) et de la postproduction (montage)."
   },
   {
     "id": "post-insta",
@@ -41,19 +76,27 @@
     "description": "Une publication pour la semaine de la prévention du suicide.",
     "category": "Design graphique",
     "year": "2026",
+    "role": "Designer graphique, créatrice de contenu",
+    "software": "Figma",
     "image": "./assets/images/thumbnails/post_insta-no_text.webp",
     "gallery": [
 
-    ]
+    ],
+    "description_task": "Le projet consistait à créer une publication pour Instagram visant à sensibiliser le public à la prévention du suicide. Nous étions toutefois tenus d’utiliser le slogan « Mieux vaut prévenir que mourir ».",
+    "description_technique": "J’ai dessiné les mains, éléments principaux du poster, en vectoriel. Pour adapter cette publication pour différentes plateformes, j’ai adapté le design aux différents formats."
   },
   
   {
     "id": "aout-mars",
-    "title": "Aout-Mars",
-    "description": "Animation mosaique de 28 secondes en style de Corporate Memphis.",
+    "title": "Tranches de Mois",
+    "description": "Animation en mosaïque de 28 secondes, dans le style Corporate Memphis.",
     "category": "Animation 2D",
     "year": "2024",
+    "role": "Illustratrice, animatrice 2D",
+    "software": "Adobe Illustrator, After Effects",
     "image": "./assets/images/thumbnails/aout_mars.webp",
-    "link": "https://player.vimeo.com/video/1232456620?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+    "link": "https://player.vimeo.com/video/1232456620?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    "description_task": "Il fallait reproduire et animer l’animation réalisée par notre professeure, en utilisant les connaissances acquises tout au long du cours et les techniques apprises avec Adobe Illustrator et After Effects.",
+    "description_technique": "J’ai dû redessiner la référence envoyée par la professeure en y ajoutant quelques modifications selon mes préférences, notamment les couleurs et le design des personnages. J’ai donc dessiné tous les éléments en vectoriel, puis je les ai animés en suivant la vidéo de référence."
   }
 ]
