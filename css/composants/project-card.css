@@ -106,6 +106,10 @@
 	transition: opacity 260ms ease;
 }
 
+.project-card__content{
+	font-family: "BAHNSCHRIFT", sans-serif;
+}
+
 .project-card:hover .project-card__overlay,
 .project-card:hover .project-card__content,
 .project-card:focus-visible .project-card__overlay,
@@ -130,6 +134,7 @@
 .project-card__title {
 	margin: 0;
 	color: var(--text-muted);
+	font-family: "Vogue", serif;
 	font-size: clamp(1.1rem, 2vw, 1.4rem);
 	font-weight: 200;
 	line-height: 1.1;
