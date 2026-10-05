@@ -189,14 +189,17 @@ main {
     color: var(--text-muted);
     line-height: 1.7;
 }
+/* Section - Skills Info --------------------------------------------------------*/
 
 .about_panel--skills {
     grid-area: skills;
     width: 100%;
     min-width: 0;
     box-sizing: border-box;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-content: center;
+    align-items: center;
     justify-items: center;
     gap: 1rem;
     padding: clamp(1.2rem, 2vw, 2.2rem);
@@ -208,7 +211,7 @@ main {
 .skilltree {
     position: relative;
     box-sizing: border-box;
-    width: min(100%, 420px);
+    /*width: min(100%, 420px);*/
 }
 
 /* Section - Inventory Info --------------------------------------------------------*/
