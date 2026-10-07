@@ -1,5 +1,6 @@
 const radarCanvas = document.getElementById('radarChart');
 
+// Données et état du graphique radar.
 const radarLabels = ['Animation 2D', 'Tournage', 'Montage', 'Animation 3D', 'Game design', 'Design graphique'];
 const radarValues = [90, 100, 80, 85, 70, 80];
 let radarState = {
@@ -13,6 +14,7 @@ let radarState = {
     progress: 1
 };
 
+// Dessin principal du graphique radar et de ses éléments visuels.
 function drawRadarChart(canvas, progress = radarState.progress) {
     const context = canvas.getContext('2d');
     const ratio = window.devicePixelRatio || 1;
@@ -140,6 +142,7 @@ function drawRadarChart(canvas, progress = radarState.progress) {
     });
 }
 
+// Animation de transition lors du survol d'un point ou d'un libellé.
 function animateHoverTransition() {
     if (radarState.hoverAnimationFrame !== null) {
         window.cancelAnimationFrame(radarState.hoverAnimationFrame);
@@ -170,6 +173,7 @@ function animateHoverTransition() {
     radarState.hoverAnimationFrame = window.requestAnimationFrame(frame);
 }
 
+// Détection de l'élément survolé par le pointeur.
 function findHoveredIndex(event) {
     const bounds = radarCanvas.getBoundingClientRect();
     const scaleX = radarState.width / bounds.width;
@@ -188,6 +192,7 @@ function findHoveredIndex(event) {
     return radarState.labelPoints.findIndex((point) => Math.hypot(point.x - pointer.x, point.y - pointer.y) <= 42);
 }
 
+// Animation d'apparition initiale du graphique.
 function animateRadarChart() {
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const duration = prefersReducedMotion ? 0 : 1400;
@@ -205,6 +210,7 @@ function animateRadarChart() {
 }
 
 if (radarCanvas) {
+    // Initialisation des attributs ARIA, des événements et du redimensionnement.
     radarCanvas.setAttribute('aria-label', 'Diagramme radar des compétences');
     radarCanvas.addEventListener('pointermove', (event) => {
         const hoveredIndex = findHoveredIndex(event);
