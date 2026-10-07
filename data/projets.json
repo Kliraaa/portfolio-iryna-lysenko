@@ -49,10 +49,8 @@
     "image": "./assets/images/thumbnails/Glowfall.webp",
     "link": "https://lysira.itch.io/glowfall-prologue",
     "gallery": [
-      "./assets/images/gallery/glowfall_1.webp",
-      "./assets/images/gallery/glowfall_2.webp",
-      "./assets/images/gallery/glowfall_3.webp",
-      "./assets/images/gallery/glowfall_4.webp"
+      "./assets/images/glowfall.webp",
+      "./assets/images/glowfall2.webp"
     ],
     "description_task": "Le projet consistait à réaliser une expérience ludique complète intégrant des images et des échantillons sonores originaux, dans laquelle le joueur progresse en accomplissant différentes actions. Le projet devait inclure des interfaces, des transitions et des instructions de jeu efficaces.",
     "description_technique": "J’ai trouvé des ressources visuelles et sonores libres de droits et je les ai intégrées au niveau, que j’ai construit moi-même. J’ai codé les mécaniques du jeu : la collecte de lumière utilisée comme ressource, l’interaction avec l’environnement et la confrontation avec un ennemi."
@@ -80,7 +78,10 @@
     "software": "Figma",
     "image": "./assets/images/thumbnails/post_insta-no_text.webp",
     "gallery": [
-
+      "./assets/images/insta-carre.webp",
+      "./assets/images/insta-behance.webp",
+      "./assets/images/insta-vertical.webp",
+      "./assets/images/insta-maquette.webp"
     ],
     "description_task": "Le projet consistait à créer une publication pour Instagram visant à sensibiliser le public à la prévention du suicide. Nous étions toutefois tenus d’utiliser le slogan « Mieux vaut prévenir que mourir ».",
     "description_technique": "J’ai dessiné les mains, éléments principaux du poster, en vectoriel. Pour adapter cette publication pour différentes plateformes, j’ai adapté le design aux différents formats."
