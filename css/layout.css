@@ -103,7 +103,11 @@ main {
     min-height: 0;
     grid-area: left;
     display: grid;
-    grid-template-rows: minmax(180px, auto) minmax(180px, auto) minmax(220px, auto);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: minmax(180px, auto) minmax(220px, auto);
+    grid-template-areas:
+        "player mbti"
+        "quest quest";
 }
 
 .about_left_column > * {
@@ -118,7 +122,8 @@ main {
 .about_panel--mbti,
 .about_panel--quest,
 .about_panel--skills,
-.about_panel--inventory {
+.about_panel--inventory,
+.about_panel--achievements {
     padding: clamp(1.1rem, 2vw, 2rem);
     font-size: 1.1rem;
     min-width: 0;
@@ -133,6 +138,14 @@ main {
     border-right: 1px solid var(--border-soft);
     border-bottom: 1px solid var(--border-soft);
     line-height: 1;
+}
+
+.about_panel--player {
+    grid-area: player;
+}
+
+.about_panel--mbti {
+    grid-area: mbti;
 }
 .contact_header, .about_name {
     font-size: 3rem;
@@ -156,8 +169,8 @@ main {
     /* color: var(--color-primary); */
 }
 
-/* Section - MBTI Info --------------------------------------------------------*/
-.mbti_traits {
+/* Section - MBTI Info  et Accomplissements--------------------------------------------------------*/
+.achievements_list, .mbti_traits {
     list-style: none;
     padding: 0;
     margin-top: 0.9rem;
@@ -167,12 +180,19 @@ main {
     line-height: 1.5;
 }
 
-.mbti_traits li {
+.achievements_list li, .mbti_traits li {
     font-family: "BAHNSCHRIFT", sans-serif;
     position: relative;
     padding-left: 0.9rem;
 }
 
+.achievements_list li a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    transition: color 180ms ease, filter 180ms ease;
+}
+
+.achievements_list li::before,
 .mbti_traits li::before {
     content: "•";
     position: absolute;
@@ -182,12 +202,17 @@ main {
 
 /* Section - Quest Info --------------------------------------------------------*/
 .about_panel--quest {
+    grid-area: quest;
     display: grid;
     align-content: center;
     gap: 0.8rem;
     border-right: 1px solid var(--border-soft);
     color: var(--text-muted);
     line-height: 1.7;
+}
+
+.about_panel--achievements {
+    grid-column: 1 / -1;
 }
 /* Section - Skills Info --------------------------------------------------------*/
 
@@ -346,7 +371,12 @@ main {
     }
 
     .about_left_column {
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
+        grid-template-areas:
+            "player"
+            "mbti"
+            "quest";
     }
 
     .about_left_column > .about_panel,
