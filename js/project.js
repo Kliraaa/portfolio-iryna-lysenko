@@ -94,6 +94,9 @@ function createProjectDetails(project) {
             </div>
         `
         : '';
+    const image = project.embedvimeo
+        ? ''
+        : `<img class="project-details__image" src="${project.image}" alt="${project.title}">`;
     const externalLink = project.link
         ? `<a class="project-details__link" href="${project.link}" target="_blank" rel="noopener noreferrer">Voir le projet</a>`
         : '';
@@ -109,7 +112,7 @@ function createProjectDetails(project) {
                 <h1>${project.title}</h1>
                 <p class="project-details__intro">${project.description}</p>
             </header>
-            <img class="project-details__image" src="${project.image}" alt="${project.title}">
+            ${image}
             ${video}
             ${externalLink}
             <dl class="project-details__facts">

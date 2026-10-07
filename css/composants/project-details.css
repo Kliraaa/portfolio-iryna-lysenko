@@ -21,6 +21,7 @@
     display: grid;
     gap: 0.75rem;
     max-width: 60rem;
+    position: static; top: auto; transform: none; z-index: auto;
 }
 
 .project-details__header h1 {
@@ -67,6 +68,7 @@
     margin: 0;
     padding: 1.25rem 0;
     border-block: 1px solid var(--border-soft);
+    font-family: "BAHNSCHRIFT", sans-serif;
 }
 
 .project-details__facts div {

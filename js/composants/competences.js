@@ -1,7 +1,7 @@
 const radarCanvas = document.getElementById('radarChart');
 
-const radarLabels = ['Coding', 'Problem Solving', 'Algorithms', 'Data Structures', 'Knowledge'];
-const radarValues = [90, 85, 80, 75, 95];
+const radarLabels = ['Animation 2D', 'Tournage', 'Montage', 'Animation 3D', 'Game design', 'Design graphique'];
+const radarValues = [90, 100, 80, 85, 70, 80];
 let radarState = {
     width: 0,
     height: 0,
