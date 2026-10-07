@@ -5,9 +5,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: min(var(--max-width), calc(100% - 2.5rem));
-    margin-inline: auto;
-    padding: 0.9rem 0;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 0.9rem 2.5rem;
     border-top: 1px solid var(--border-soft);
     border-bottom: 1px solid var(--border-soft);
     background: rgba(var(--dark-rgb), 0.94);
@@ -69,6 +69,7 @@ header {
     text-shadow: 0 0 0.9rem currentColor;
 }
 
+
 /* Footer --------------------------------------------------------*/
 footer {
     margin-bottom: 1rem;
@@ -90,4 +91,11 @@ footer {
     height: auto;
     transition: transform 260ms ease;
     transform-origin: center;
+}
+
+@media (max-width: 768px) {
+    .nav_logo_text,
+    .nav_footer_logo .nav_logo_text {
+        display: none;
+    }
 }

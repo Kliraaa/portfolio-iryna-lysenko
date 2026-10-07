@@ -96,7 +96,7 @@
     "role": "Illustratrice, animatrice 2D",
     "software": "Adobe Illustrator, After Effects",
     "image": "./assets/images/thumbnails/aout_mars.webp",
-    "link": "https://player.vimeo.com/video/1232456620?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    "embedvimeo": "https://player.vimeo.com/video/1232456620?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     "description_task": "Il fallait reproduire et animer l’animation réalisée par notre professeure, en utilisant les connaissances acquises tout au long du cours et les techniques apprises avec Adobe Illustrator et After Effects.",
     "description_technique": "J’ai dû redessiner la référence envoyée par la professeure en y ajoutant quelques modifications selon mes préférences, notamment les couleurs et le design des personnages. J’ai donc dessiné tous les éléments en vectoriel, puis je les ai animés en suivant la vidéo de référence."
   }

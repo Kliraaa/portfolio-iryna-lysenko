@@ -1,6 +1,6 @@
 main,
 footer {
-    width: min(var(--max-width), calc(100% - 2.5rem));
+    /*width: min(var(--max-width), calc(100% - 2.5rem));*/
     margin-inline: auto;
 }
 
@@ -48,7 +48,7 @@ main {
 .hero_subtitle::before,
 .hero_subtitle::after {
     content: "";
-    width: clamp(22px, 4vw, 44px);
+    /*width: clamp(22px, 4vw, 44px);*/
     height: 1px;
     background: var(--color-primary);
 }

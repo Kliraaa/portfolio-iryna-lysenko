@@ -107,11 +107,11 @@ function createProjectDetails(project) {
     return `
         <article class="project-details">
             <a class="project-details__back" href="./index.html#creations">← Retour aux créations</a>
-            <header class="project-details__header">
+            <div class="project-details__header">
                 <p class="project-details__meta">${project.category} · ${project.year}</p>
                 <h1>${project.title}</h1>
                 <p class="project-details__intro">${project.description}</p>
-            </header>
+            </div>
             ${image}
             ${video}
             ${externalLink}
@@ -128,7 +128,6 @@ function createProjectDetails(project) {
                 <h2>Description technique</h2>
                 <p>${project.description_technique}</p>
             </section>
-            
             ${gallery}
         </article>
     `;
