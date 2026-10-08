@@ -35,6 +35,20 @@
     "software ": "DaVinci Resolve",
     "image": "assets/images/thumbnails/onyxia.webp",
     "embedvimeo": "https://player.vimeo.com/video/1231715070?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    "gallery": [
+      "./assets/images/onyx_ia/backstage1.jpg",
+      "./assets/images/onyx_ia/backstage2.jpg",
+      "./assets/images/onyx_ia/backstage3.jpg",
+      "./assets/images/onyx_ia/backstage4.jpg",
+      "./assets/images/onyx_ia/backstage5.jpg",
+      "./assets/images/onyx_ia/backstage6.jpg",
+      "./assets/images/onyx_ia/backstage7.jpg",
+      "./assets/images/onyx_ia/preproduction/storyboard_1.jpg",
+      "./assets/images/onyx_ia/preproduction/storyboard_2.jpg",
+      "./assets/images/onyx_ia/preproduction/storyboard_3.jpg",
+      "./assets/images/onyx_ia/preproduction/storyboard_4.jpg"
+      
+    ],
     "description_task": "Le professeur nous a demandé de réaliser une publicité sur un thème libre. Notre équipe a donc choisi de créer la bande-annonce d’un film. Il fallait répartir entre les membres de l’équipe les tâches de la préproduction (synopsis, scénario, storyboard, dépouillement, horaire et moodboard), de la production (éclairage, caméra, son et acteurs) et de la postproduction (montage et autoévaluation).",
     "description_technique": "En tant que réalisatrice, j’ai réparti les tâches entre les membres de l’équipe. Pour la préproduction, j’ai rédigé le synopsis, le scénario et le dépouillement et, en me basant sur ceux-ci, j’ai dessiné le storyboard. Pour la production, j’étais actrice et je donnais des directives à mes collègues afin de respecter l’horaire de tournage et de coordonner le travail sur le son et les caméras. Pour la postproduction, j’ai monté une scène et supervisé le montage général."
   },
