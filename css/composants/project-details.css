@@ -1,3 +1,4 @@
+/* Layout principal */
 .project-page__content {
     width: min(var(--max-width), calc(100% - 2.5rem));
     margin: 0 auto;
@@ -9,6 +10,7 @@
     padding-block: 3rem 5rem;
 }
 
+/* Navigation et liens */
 .project-details__back,
 .project-details__link {
     color: var(--color-primary);
@@ -17,6 +19,7 @@
     letter-spacing: 0.12em;
 }
 
+/* En-tête du projet */
 .project-details__header {
     display: grid;
     gap: 0.75rem;
@@ -36,6 +39,7 @@
     text-transform: uppercase;
 }
 
+/* Texte introductif et contenu */
 .project-details__intro,
 .project-details__section p,
 .project-details__facts dd {
@@ -44,6 +48,7 @@
     line-height: 1.7;
 }
 
+/* Médias projet */
 .project-details__image {
     width: 100%;
     max-height: 70vh;
@@ -61,6 +66,7 @@
     border: 0;
 }
 
+/* Faits et informations */
 .project-details__facts {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
@@ -83,12 +89,14 @@
     font-size: 1.4rem;
 }
 
+/* Sections de contenu */
 .project-details__section {
     display: grid;
     gap: 0.65rem;
     max-width: 60rem;
 }
 
+/* Galerie projet */
 .project-details__gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
@@ -101,6 +109,7 @@
     object-fit: cover;
 }
 
+/* États et messages */
 .projects__error {
     padding-block: 4rem;
     color: var(--color-primary);

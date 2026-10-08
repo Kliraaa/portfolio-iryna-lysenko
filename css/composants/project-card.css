@@ -1,3 +1,4 @@
+/* Section: projects layout */
 /*.projects {
   width: min(100% - 2rem, 1100px);
   margin: 3rem auto;
@@ -8,6 +9,7 @@
   margin: 0 0 1.5rem;
 }*/
 
+/* Section: projects grid */
 .projects__grid {
   display: grid;
 	grid-template-columns: 1fr;
@@ -21,6 +23,7 @@
 	}
 }
 
+/* Section: project card base */
 .project-card {
 	position: relative;
 	overflow: hidden;
@@ -32,6 +35,7 @@
 	transition: transform 260ms ease, border-color 260ms ease;
 }
 
+/* Section: hover and focus states */
 .project-card:hover,
 .project-card:focus-visible {
 	/*transform: scale(1.06);*/
@@ -40,6 +44,7 @@
     filter: drop-shadow(0 0 0.9rem var(--color-dark-primary-rgba));
 }
 
+/* Section: card image */
 .project-card__image {
 	position: absolute;
 	inset: 0;
@@ -59,6 +64,7 @@
     );
 }
 
+/* Section: image overlay */
 .project-card::after {
 	content: "";
 	position: absolute;
@@ -84,6 +90,7 @@
 	transform: scale(1.03);
 }
 
+/* Section: content overlay */
 .project-card__overlay,
 .project-card__content {
 	position: absolute;
@@ -106,6 +113,7 @@
 	transition: opacity 260ms ease;
 }
 
+/* Section: content typography */
 .project-card__content{
 	font-family: "BAHNSCHRIFT", sans-serif;
 }
@@ -117,6 +125,7 @@
 	opacity: 1;
 }
 
+/* Section: meta text */
 .project-card__meta {
 	margin: 0 0 4px;
 	color: var(--color-dark-primary);
@@ -131,6 +140,7 @@
 	color: var(--color-primary);
 }
 
+/* Section: title text */
 .project-card__title {
 	margin: 0;
 	color: var(--text-muted);
@@ -145,6 +155,7 @@
 	color: var(--light);
 }
 
+/* Section: description text */
 .project-card__description {
 	position: absolute;
 	bottom: 3.7rem;

@@ -1,13 +1,16 @@
+// Return the software name, including support for the legacy key with a trailing space.
 function getSoftware(project) {
     return project.software || project['software '];
 }
 
+// Render the gallery section when images are available.
 function createGallery(project) {
     if (!Array.isArray(project.gallery) || !project.gallery.length) {
         return '';
     }
 
     return `
+        <!-- Galerie -->
         <section class="project-details__section">
             <h2>Galerie</h2>
             <div class="project-details__gallery">
@@ -21,11 +24,13 @@ function createGallery(project) {
     `;
 }
 
+// Add a lightbox for the gallery images and wire up navigation.
 function addGalleryLightbox(project) {
     if (!Array.isArray(project.gallery) || !project.gallery.length) {
         return;
     }
 
+    // Inject lightbox styles dynamically.
     const style = document.createElement('style');
     style.textContent = `
         .project-details__gallery-item { border: 0; padding: 0; background: none; cursor: zoom-in; }
@@ -40,6 +45,7 @@ function addGalleryLightbox(project) {
     `;
     document.head.appendChild(style);
 
+    // Create the lightbox markup.
     const lightbox = document.createElement('div');
     lightbox.className = 'project-details__lightbox';
     lightbox.hidden = true;
@@ -51,19 +57,24 @@ function addGalleryLightbox(project) {
     `;
     document.body.appendChild(lightbox);
 
+    // Keep track of the currently displayed image.
     const imageElement = lightbox.querySelector('.project-details__lightbox-image');
     let currentIndex = 0;
 
+    // Update the lightbox image content.
     const showImage = (index) => {
         currentIndex = (index + project.gallery.length) % project.gallery.length;
         imageElement.src = project.gallery[currentIndex];
         imageElement.alt = `${project.title} - image ${currentIndex + 1}`;
     };
+
+    // Hide the lightbox and restore scrolling.
     const close = () => {
         lightbox.hidden = true;
         document.body.style.overflow = '';
     };
 
+    // Open the lightbox from each thumbnail button.
     document.querySelectorAll('.project-details__gallery-item').forEach((button) => {
         button.addEventListener('click', () => {
             showImage(Number(button.dataset.galleryIndex));
@@ -77,6 +88,8 @@ function addGalleryLightbox(project) {
     lightbox.addEventListener('click', (event) => {
         if (event.target === lightbox) close();
     });
+
+    // Support keyboard controls while the lightbox is visible.
     document.addEventListener('keydown', (event) => {
         if (lightbox.hidden) return;
         if (event.key === 'Escape') close();
@@ -85,7 +98,9 @@ function addGalleryLightbox(project) {
     });
 }
 
+// Build the full project details layout.
 function createProjectDetails(project) {
+    // Optional sections that depend on the project data.
     const gallery = createGallery(project);
     const video = project.embedvimeo
         ? `
@@ -106,37 +121,54 @@ function createProjectDetails(project) {
 
     return `
         <article class="project-details">
+            <!-- Navigation de retour -->
             <a class="project-details__back" href="./index.html#creations">← Retour aux créations</a>
+
+            <!-- En-tête du projet -->
             <div class="project-details__header">
                 <p class="project-details__meta">${project.category} · ${project.year}</p>
                 <h1>${project.title}</h1>
                 <p class="project-details__intro">${project.description}</p>
             </div>
+
+            <!-- Média principal -->
             ${image}
             ${video}
+
+            <!-- Lien externe vers le projet -->
             ${externalLink}
+
+            <!-- Fiche technique -->
             <dl class="project-details__facts">
                 <div><dt>Rôle</dt><dd>${project.role}</dd></div>
                 <div><dt>Logiciel</dt><dd>${getSoftware(project) || 'Non précisé'}</dd></div>
                 <div><dt>Membres</dt><dd>${members}</dd></div>
             </dl>
+
+            <!-- Mandat -->
             <section class="project-details__section">
                 <h2>Mandat</h2>
                 <p>${project.description_task}</p>
             </section>
+
+            <!-- Description technique -->
             <section class="project-details__section">
                 <h2>Description technique</h2>
                 <p>${project.description_technique}</p>
             </section>
+
+            <!-- Galerie -->
             ${gallery}
         </article>
     `;
 }
 
+// Load the selected project and display it on the page.
 async function showProject() {
     const container = document.querySelector('.project-page__content');
     const projectId = new URLSearchParams(window.location.search).get('id');
 
+    // Stop early if the page container or project id is missing.
     if (!container || !projectId) {
         if (container) {
             container.innerHTML = '<p class="projects__error">Projet introuvable. <a href="./index.html#creations">Retour aux créations</a></p>';
@@ -145,6 +177,7 @@ async function showProject() {
     }
 
     try {
+        // Load all projects and find the matching entry.
         const projects = await loadProjects();
         const project = projects.find((item) => item.id === projectId);
 
@@ -153,13 +186,16 @@ async function showProject() {
             return;
         }
 
+        // Render the page content and enable gallery interactions.
         document.title = `${project.title} - Portfolio Iryna Lysenko`;
         container.innerHTML = createProjectDetails(project);
         addGalleryLightbox(project);
     } catch (error) {
+        // Show a generic loading error if something fails.
         console.error(error);
         container.innerHTML = '<p class="projects__error">Les détails du projet ne peuvent pas être chargés pour le moment.</p>';
     }
 }
 
+// Initialize the project page.
 showProject();

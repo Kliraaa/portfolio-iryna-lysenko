@@ -1,3 +1,4 @@
+/* Header */
 header {
     position: sticky;
     top: 0;
@@ -14,6 +15,7 @@ header {
     backdrop-filter: blur(6px);
 }
 
+/* Navigation Logo */
 .nav_logo, .nav_footer_logo {
     display: flex;
     align-items: center;
@@ -23,6 +25,7 @@ header {
     transform-origin: start;
 }
 
+/* Logo Image */
 .nav_logo img {
     width: 3rem;
     height: auto;
@@ -30,6 +33,7 @@ header {
     transform-origin: center;
 }
 
+/* Navigation Info */
 .nav_info {
     font-family: "Vogue", serif;
     display: flex;
@@ -40,6 +44,7 @@ header {
     list-style: none;
 }
 
+/* Navigation Links */
 .nav_link a {
     display: inline-block;
     font-size: 0.75rem;
@@ -48,12 +53,14 @@ header {
     transition: color 180ms ease, transform 180ms ease, text-shadow 180ms ease;
 }
 
+/* Links Hover/Focus */
 .nav_link a:hover,
 .nav_link a:focus-visible {
     transform: scale(1.08);
     text-shadow: 0 0 0.9rem currentColor;
 }
 
+/* Logo Hover/Focus */
 .nav_logo img:hover,
 .nav_logo img:focus-visible,
 .nav_footer_logo img:hover,
@@ -63,6 +70,7 @@ header {
     filter: drop-shadow(0 0 0.9rem var(--color-primary));
 }
 
+/* Logo Text Hover/Focus */
 .nav_logo:hover,
 .nav_logo:focus-visible {
     letter-spacing: 0.5em;
@@ -78,6 +86,7 @@ footer {
 }
 
 
+/* Footer Navigation */
 .nav_footer {
     display: flex;
     justify-content: space-between;
@@ -86,6 +95,7 @@ footer {
     border-top: 1px solid var(--border-soft);
 }
 
+/* Footer Logo Image */
 .nav_footer_logo img {
     width: 1.8rem;
     height: auto;
@@ -93,6 +103,7 @@ footer {
     transform-origin: center;
 }
 
+/* Mobile Responsive */
 @media (max-width: 768px) {
     .nav_logo_text,
     .nav_footer_logo .nav_logo_text {
