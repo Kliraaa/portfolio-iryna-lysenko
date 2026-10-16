@@ -90,12 +90,12 @@ main {
         "left skills"
         "inventory inventory";
     min-height: 560px;
-    border: 1px solid var(--border-soft);
-    background: linear-gradient(180deg, rgba(9, 13, 18, 0.95), rgba(6, 9, 13, 0.98));
+    border: 1px solid var(--border-soft); 
+    background:  rgba(30, 40, 47, 0.2) /*var(--dark-blue-rgba), mais plus transparent*/;
     overflow: hidden;
 }
 
-.about_left_column {
+.about_left_column { 
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -229,14 +229,13 @@ main {
     gap: 1rem;
     padding: clamp(1.2rem, 2vw, 2.2rem);
     border-left: 1px solid var(--border-soft);
-    background: rgba(10, 14, 18, 0.6);
+    /*background: rgba(10, 14, 18, 0.6);*/
     overflow: hidden;
 }
 
 .skilltree {
     position: relative;
     box-sizing: border-box;
-    /*width: min(100%, 420px);*/
 }
 
 /* Section - Inventory Info --------------------------------------------------------*/
@@ -245,7 +244,6 @@ main {
     display: grid;
     align-content: start;
     gap: 0.9rem;
-    background: rgba(10, 14, 18, 0.78);
 }
 .inventory_grid {
     display: grid;
@@ -260,7 +258,7 @@ main {
     gap: 0.55rem;
     padding: 0.7rem 0.45rem;
     border: 1px solid var(--border-soft);
-    background: rgba(14, 21, 27, 0.8);
+    background: var(--dark-blue-rgba);
     min-height: 130px;
     min-width: 0;
     transition: transform 260ms ease, background 260ms ease, border-color 260ms ease;
