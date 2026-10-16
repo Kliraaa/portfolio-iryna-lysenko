@@ -68,7 +68,7 @@ function drawRadarChart(canvas, progress = radarState.progress) {
 
     const completedSegments = Math.floor(progress * radarLabels.length);
     const segmentProgress = progress * radarLabels.length - completedSegments;
-    const animatedPoints = radarState.points.slice(0, completedSegments + 1);
+    const animatedPoints = progress > 0 ? radarState.points.slice(0, completedSegments + 1) : [];
 
     if (completedSegments < radarLabels.length && radarState.points[completedSegments]) {
         const startPoint = radarState.points[completedSegments];
@@ -123,7 +123,7 @@ function drawRadarChart(canvas, progress = radarState.progress) {
     });
 
     radarState.points.forEach((position, index) => {
-        const isVisible = progress >= index / radarLabels.length;
+        const isVisible = progress > index / radarLabels.length;
         if (!isVisible) {
             return;
         }
@@ -226,6 +226,17 @@ if (radarCanvas) {
     window.addEventListener('resize', () => {
         drawRadarChart(radarCanvas);
     });
-    animateRadarChart();
+    // Dessiner immédiatement pour que le graphique reste visible même si l'observateur d'intersection ne se déclenche pas.
+    drawRadarChart(radarCanvas, 0);
+    const radarVisibilityObserver = new IntersectionObserver((entries, observer) => {
+        const chartEntry = entries[0];
+
+        if (chartEntry && chartEntry.isIntersecting) {
+            animateRadarChart();
+            observer.disconnect();
+        }
+    }, { threshold: 0.75 });
+
+    radarVisibilityObserver.observe(radarCanvas);
 }
 
